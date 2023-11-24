@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>MY Protfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="contianer">
+            <nav>
+                <h1><span>K</span>iran</h1>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></i>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <h1>Hi I'm <span>Kiran</span></h1>
+
+            </div>
+            
+        </div>
+    </div>
+    <!---------------- About div -------------->
+    <div id="about">
+        <div id="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/1652505688584.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>I am a self-motivated, enthusiastic person and a quick learner. I want to work in a Reputed
+                        Company that pushes my limits and utilizes myskills properly and makes me work on more
+                        complex problem</p>
+                    
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <!-- <p class="tab-links">Experience</p> -->
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-content active-tab" id="Skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br>Python, C++ , Java</li>
+                            <li><span>DataBase</span><br>SQL</li>
+                            <li><span>Technologies</span><br>Amazon Web Services , Linux</li>
+                            <li><span>Website Development</span><br>Html</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="Education">
+                        <ul>
+                            <li><span>2018 - 2021</span><br>Diploma from Andhra Polytechnic College</li>
+                            <li><span>2021 - 2024</span><br>BTech from Aditya College of Engineering and Technology</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------services--------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <h2>Programming Languages</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet minima reiciendis suscipit necessitatibus
+                         modi fugiat minus vel saepe id consequuntur dicta soluta, molestias quas! Beatae ducimus qui eum 
+                         praesentium ad!</p>
+                    <a href="#">learn more</a>
+                </div>
+
+                <div>
+                <h2>DataBase</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus asperiores quam deserunt voluptatum aliquid
+                     ad iste atque similique inventore hic dolorum sunt qui officiis eligendi voluptatem, voluptas, perspiciatis
+                      repellat libero.</p>
+                <a href="#">learn more</a>
+                </div>
+
+                <div>
+                <h2>Technologies</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet minima reiciendis suscipit necessitatibus
+                        modi fugiat minus vel saepe id consequuntur dicta soluta, molestias quas! Beatae ducimus qui eum 
+                        praesentium ad!</p>
+                <a href="#">learn more</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Work</h1>
+        </div>
+        <div class="work">
+            <img
+        </div>
+    </div>
+    <!-- ---------------Contact---------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p>dudalakiran286@gmail.com</p>
+                    <p>9550405602</p>
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit">submit</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontent = document.getElementsByClassName("tab-content");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontents of tabcontent){
+                tabcontents.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+</body>
+</html>
